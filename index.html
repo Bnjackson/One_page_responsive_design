@@ -5,12 +5,13 @@
         <meta charset="UTF-8">
         <meta name="author" content="Ben Jackson">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
     </head>
     <body>
         <header>
             <nav class="navbar">
                 <div class="navbar-container">
-                    <ul>
+                    <ul class="navbar-list">
                         <li><a href="#">Homepage</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Services</a></li>
@@ -18,46 +19,68 @@
                     </ul>
                 </div>
             </nav>
-            <div class="paraflax-header"></div>
-            <div class="header-content">
-                <h1>One Page Responsive Design</h1>
-                <p>Using HTML and CSS</p>
-            </div>        
+            <div class="parallax-header">
+                <div class="header-content">
+                    <h1>One Page Responsive Design</h1>
+                    <span>Using HTML and CSS</span>
+                </div>        
+            </div>
         </header>
         <main>
             <section>
                 <div class="container">
-                   <div class="feature-1">
-                    <img src="" alt="">
+                   <div class="feature">
+                    <img src="media/feature-1.jpg" alt="">
                     <h2>HTML & CSS</h2> 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus officiis dolores dolorum voluptas beatae dignissimos</p>
-                    <button class="feature-button">See Details</button>
+                    <div class="paragraph-container">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus officiis dolores dolorum voluptas beatae dignissimos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus officiis dolores dolorum voluptas beatae dignissimos
+                        </p>
+                    </div>
+                    <div class="button-container">
+                        <button class="feature-button">See Details</button>
+                    </div>
                    </div>
-                   <div class="feature-2">
-                    <img src="" alt=""> 
+                   <div class="feature">
+                    <img src="media/feature-2.jpg" alt=""> 
                     <h2>Responsive Design</h2> 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus officiis dolores dolorum voluptas beatae dignissimos</p>
-                    <button class="feature-button">See Details</button>
+                    <div class="paragraph-container">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus officiis dolores dolorum voluptas beatae dignissimos. 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        Possimus officiis dolores dolorum voluptas beatae dignissimos</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="feature-button">See Details</button>
+                    </div>
                    </div> 
-                   <div class="feature-3">
-                    <img src="" alt=""> 
+                   <div class="feature">
+                    <img src="media/feature-3.jpg" alt=""> 
                     <h2>Parallax Layout</h2> 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus officiis dolores dolorum voluptas beatae dignissimos</p>
-                    <button class="feature-button">See Details</button>
+                    <div class="paragraph-container">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus officiis dolores dolorum voluptas beatae dignissimos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus officiis dolores dolorum voluptas beatae dignissimos</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="feature-button">See Details</button>
+                    </div>
                    </div> 
                 </div>
             </section>
             <section>
                 <div class="container">
-                    <div class="left-column">
+                    <div class="column">
                        <img src="" alt=""> 
                         <h2>Left Column</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eius nulla ipsa quaerat corrupti perspiciatis. Vitae est magnam blanditiis ea nam alias obcaecati, ad, saepe eligendi, quaerat veritatis quis doloribus!</p>
+                        <div class="paragraph-container">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eius nulla ipsa quaerat corrupti perspiciatis. Vitae est magnam blanditiis ea nam alias obcaecati, ad, saepe eligendi, quaerat veritatis quis doloribus!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eius nulla ipsa quaerat corrupti perspiciatis. Vitae est magnam blanditiis ea nam alias obcaecati, ad, saepe eligendi, quaerat veritatis quis doloribus!</p>
+                        </div>
                     </div>
-                    <div class="right-column">
+                    <div class="column">
                         <img src="" alt="">
                         <h2>Right Column</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, reprehenderit eveniet impedit delectus eum deleniti est commodi, nemo, quod sunt harum nisi magni laudantium! Labore, libero voluptate! Sapiente, reprehenderit laboriosam?</p>
+                        <div class="paragraph-container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, reprehenderit eveniet impedit delectus eum deleniti est commodi, nemo, quod sunt harum nisi magni laudantium! Labore, libero voluptate! Sapiente, reprehenderit laboriosam?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eius nulla ipsa quaerat corrupti perspiciatis. Vitae est magnam blanditiis ea nam alias obcaecati, ad, saepe eligendi, quaerat veritatis quis doloribus!</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -120,7 +143,7 @@
         </main>
         <footer>
             <div class="footer-container">
-
+                <p>Copyright &#169; 2020 Company Name</p>
             </div>
         </footer>
     </body>
