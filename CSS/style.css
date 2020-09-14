@@ -27,6 +27,15 @@ p {
     color: #333;
 }
 
+.paragraph-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.paragraph-container p {
+    text-align: left;
+}
 /*
 HEADER
 */
@@ -96,16 +105,6 @@ FEATURE-SECTION
     background-color: rgb(242, 242, 242);
     margin: 15px;
     padding: 0px;
-}
-
-.paragraph-container {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.paragraph-container p {
-    text-align: left;
 }
 
 .button-container {
