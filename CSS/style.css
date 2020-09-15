@@ -297,8 +297,34 @@ FOOTER CONTAINER
     .navbar {
         padding: 5px;
     }
+    .container {
+        display: block;   
+    }
+    .feature img {
+        width: 100%;
+    }
 }
 
+@media only screen and (min-width: 886px) {
+    .container {
+        width: 60%;
+    }
+    .form-container {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .feature img {
+        min-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    .feature img {
+        min-width: 350px;
+    }
+}
 
 
 
