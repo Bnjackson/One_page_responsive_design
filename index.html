@@ -8,15 +8,15 @@
         <link rel="stylesheet" type="text/css" href="CSS/style.css">
     </head>
     <body>
-        <header>
+        <header id="header">
             <nav class="navbar">
                 <div class="navbar-container">
-                    <ul class="navbar-list">
-                        <li><a href="#">Homepage</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                    <div class="navbar-list">
+                        <a href="#header"><li>Homepage</li></a>
+                        <a href="#about-us"><li>About Us</li></a>
+                        <a href="#services"><li>Services</li></a>
+                        <a href="#contact"><li>Contact</li></a>
+                    </div>
                 </div>
             </nav>
             <div class="parallax-header">
@@ -29,7 +29,7 @@
         <main>
             <section>
                 <div class="container">
-                   <div class="feature">
+                   <div class="feature" id="about-us">
                     <img src="media/feature-1.jpg" alt="trees covering sky">
                     <h2>HTML & CSS</h2> 
                     <div class="paragraph-container">
@@ -67,7 +67,7 @@
             <section>
                 <div class="container">
                     <div class="column">
-                       <img src="media/column-left.jpg" alt=""> 
+                       <img src="media/column-left.jpg" alt="coffee"> 
                         <h2>Left Column</h2>
                         <div class="paragraph-container">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eius nulla ipsa quaerat corrupti perspiciatis. Vitae est magnam blanditiis ea nam alias obcaecati, ad, saepe eligendi, quaerat veritatis quis doloribus!</p>
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <div class="column">
-                        <img src="media/column-right.jpg" alt="">
+                        <img src="media/column-right.jpg" alt="sunset over water">
                         <h2>Right Column</h2>
                         <div class="paragraph-container">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, reprehenderit eveniet impedit delectus eum deleniti est commodi, nemo, quod sunt harum nisi magni laudantium! Labore, libero voluptate! Sapiente, reprehenderit laboriosam?</p>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </section>
-            <div class="parallax-services-section">
+            <div class="parallax-services-section" id="services">
                 <div class="parallax-services-content">
                     <h1>Our Services</h1>
                     <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut recusandae veritatis delectus, illum corporis eius ex suscipit!<span>
@@ -94,60 +94,46 @@
             </div>
             <section>
                 <div class="container">
-                    <div class="column-top-row">
-                        <img src="" alt="">
-                        <h2>Column One</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="big-column">
+                        <img src="media/big-column.jpg" alt="Lake Mountain">
+                        <h2>One Big Column</h2>
+                        <div class="paragraph-container">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur exercitationem aspernatur nobis recusandae eveniet culpa ipsum, vero tempora placeat eos, laborum excepturi harum illo cupiditate. Deleniti dicta consequuntur vel omnis!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero voluptates, ab tempore dolorem ullam nulla ipsa, dolor reprehenderit quia alias incidunt soluta porro deserunt veritatis. Repellendus repudiandae possimus quo iusto?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita ipsam voluptas? Autem harum ipsa, hic nihil suscipit quisquam fuga ad tempore sit ducimus saepe omnis est, reprehenderit eveniet magnam.</p>
+                        </div>
                     </div>
-                    <div class="column-top-row">
-                        <img src="" alt="">
-                        <h2>Column Two</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>    
-                </div>   
-                <div class="container"> 
-                    <div class="column-bottom-row">
-                        <img src="" alt="">
-                        <h2>Column Three</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="column-bottom-row">
-                        <img src="" alt="">
-                        <h2>Column Four</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="big-column">
-                    <img src="" alt="">
-                    <h2>One Big Column</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur exercitationem aspernatur nobis recusandae eveniet culpa ipsum, vero tempora placeat eos, laborum excepturi harum illo cupiditate. Deleniti dicta consequuntur vel omnis!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero voluptates, ab tempore dolorem ullam nulla ipsa, dolor reprehenderit quia alias incidunt soluta porro deserunt veritatis. Repellendus repudiandae possimus quo iusto?</p>
                 </div>
             </section>
             <section>
-                <div class="form">
-                    <div class="container">
-                        <div>
-                            <h2>Contact Form</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita ipsam voluptas? Autem harum ipsa, hic nihil suscipit quisquam fuga ad tempore sit ducimus saepe omnis est, reprehenderit eveniet magnam.</p>
+                <div class="parallax-form" id="contact">
+                    <div class="form-container">
+                        <div class="form-content">
+                            <div>
+                                <h1>Contact Form</h1>
+                                <div class="form-paragraph-container">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita ipsam voluptas? Autem harum ipsa, hic nihil suscipit quisquam fuga ad tempore sit ducimus saepe omnis est, reprehenderit eveniet magnam.</p>
+                                </div>
+                            </div>
+                            <form action="#" method="POST">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Name" class="form-input">
+                                    <input type="text" placeholder="Email" class="form-input">
+                                    <input type="text" placeholder="Subject" class="form-input">
+                                </div>
+                                <div class="textarea-container">
+                                    <textarea class="textarea" placeholder="Your message here..." rows="6"></textarea>
+                                </div>
+                                <button type="button">Send</button>
+                            </form>
                         </div>
-                        <form action="#" method="POST">
-                            <div class="form-group">
-                                <input type="text" placeholder="Name" class="form-input">
-                                <input type="text" placeholder="Email" class="form-input">
-                                <input type="text" placeholder="Subject" class="form-input">
-                            </div>
-                            <div class="textarea-container">
-                                <textarea class="textarea" placeholder="Your message here..." rows="6"></textarea>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
             <div class="footer-container">
-                <p>Copyright &#169; 2020 Company Name</p>
+                <p>Copyright &#169; 2020 | Company Name</p> 
             </div>
         </footer>
     </body>
